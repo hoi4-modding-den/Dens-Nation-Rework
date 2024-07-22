@@ -1,17 +1,14 @@
-# The Den Nuclear Apocalypse
+# Den's Nation Reworks
 
-Apart of the Modding Jam. All commits are due by August 1st, at 09:00 EST.
+Apart of the Modding Jam. All commits are due by August 12th, at 00:00 CST.
 
 Rules: <br>
 <ol>
-  <li>All majorly OP content will be removed</li>
-  <li>Any files that cause many errors will be removed</li>
-  <li>Only commit files on your nation's branch of the repo.</li>
-  <li>If your country interacts with another in the rework, collaboration between the two is acceptable.</li>
-  <li>Do not push to the main branch.</li>
+  <li>6 max per team</li>
+  <li>Only push complete and errorless code to the main branch, every other case use your team's branch</li>
+  <li>If your country interacts with another in the rework, especially in the historical branch, please work together.</li>
 </ol>
 <br>
-You are allowed to modify provinces and states.<br><br>
 
 ## Who's Where?
 <details>
@@ -20,9 +17,9 @@ You are allowed to modify provinces and states.<br><br>
 
 | Country | Github Name | Discord Name |
 | --- | :---: | :---: |
-| <span style="color: lightblue">France</span> | X | X |
+| <span style="color: lightblue">Japan</span> | X | X |
 | <span style="color: tan">Hungary</span> | X | X |
-| <span style="color: lime">Italy</span> | X | X |
+| <span style="color: lime">USA</span> | X | X |
 | <span style="color: purple">Yugoslavia</span> | X | X |
 
 </details>

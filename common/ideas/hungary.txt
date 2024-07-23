@@ -2,6 +2,7 @@ ideas = {
 
 	country = {
 
+		# STARTING SPIRITS
 		HUN_treaty_of_triannon = {
 			allowed = {
 				original_tag = HUN
@@ -12,8 +13,10 @@ ideas = {
 			}
 
 			modifier = {
-				conscription = -0.005
-				production_speed_arms_factory_factor = -0.5
+				political_power_gain = -0.50
+				recruitable_population_factor = -0.25
+				stability_factor = -0.1
+				production_speed_arms_factory_factor = -0.3
 			}
 		}
 		HUN_treaty_of_triannon_aat = {
@@ -32,10 +35,43 @@ ideas = {
   			}
 
 			modifier = {
-				conscription = -0.005
-				production_speed_arms_factory_factor = -0.5
+				political_power_gain = -0.50
+				recruitable_population_factor = -0.25
+				stability_factor = -0.1
+				production_speed_arms_factory_factor = -0.3
 			}
 		}
+		HUN_irredentist_sentiment = {
+			picture = ICE_thungur_hnifur
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+			}
+
+			modifier = {
+				justify_war_goal_time = -0.1
+				war_support_factor = 0.05
+			}
+		}
+		HUN_rustic_economy = {
+			picture = generic_agrarian_reform
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.05
+				industrial_capacity_factory = -0.15
+			}
+		}
+
+		# NATIONAL SPIRITS
 		HUN_treaty_of_triannon_2 = {
 			allowed = {
 				original_tag = HUN

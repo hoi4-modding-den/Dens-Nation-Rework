@@ -13,7 +13,9 @@ state={
 		}
 		add_core_of = ROM
 		add_core_of = TRA
-
+		victory_points = {
+			3696 3
+		}
 	}
 	manpower=1105345
 	state_category=town

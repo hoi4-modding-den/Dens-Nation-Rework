@@ -1,0 +1,25 @@
+
+state={
+	id=985
+	name="STATE_985"
+	provinces={
+		9539 13369 13370
+	}
+	history={
+		owner = CZE
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = CZE
+
+		1939.3.14 = {
+			owner = SLO
+			controller = SLO
+			add_core_of = SLO
+		}
+	}
+	state_category = pastoral
+	manpower=150000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -20,52 +20,95 @@ focus_tree = {
 		}
 	}
 	
+	shared_focus = HUN_declare_republic
+
 	default = no
 
-	continuous_focus_position = { x = 50 y = 1600 }
+	continuous_focus_position = { x = 50 y = 1500 }
 
-#	focus = {
-#		id = HUN_
-#		icon = GFX_
-#		prerequisite = { focus = }
-#		mutually_exclusive = { focus =  }
-#		x = -3
-#		y = 0
-#		relative_position_id = 
-#
-#		cost = 10
-#
-#		ai_will_do = {
-#			factor = 1
-#		}
-#
-#		available = {
-#
-#		}
-#		
-#		bypass = {
-#
-#		}
-#
-#		cancel_if_invalid = yes
-#		continue_if_invalid = no
-#		available_if_capitulated = no
-#
-#		complete_tooltip = {
-#
-#		}
-#
-#		completion_reward = {
-#
-#		}
-#	}
+	focus = {
+		id = HUN_time_waster
+		icon = GFX_focus_hun_assassinate_horthy
+		x = 6
+		y = 0
 
+		cost = 10
+
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = HUN_march_on_budapest
+		icon = GFX_focus_ITA_generic_fascist_workers
+		x = 6
+		y = 1
+
+		cost = 7
+		prerequisite = {
+			focus = HUN_time_waster
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = HUN_crackdown_on_fascists
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 5
+		y = 2
+
+		cost = 1
+		prerequisite = {
+			focus = HUN_march_on_budapest
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = HUN_control_the_media
+		icon = GFX_focus_BRA_cohen_plan
+		x = 7
+		y = 2
+
+		cost = 1
+		prerequisite = {
+			focus = HUN_march_on_budapest
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	
+		completion_reward = {
+
+		}
+	}
+
+	
 	############################
 	##### BALANCED BUDGET ######
 	############################
 
 	focus = {
 		id = HUN_balanced_budget
+
+		allow_branch = { has_country_flag = HUN_base_game_tree_enabled }
+
 		icon = GFX_goal_generic_consumer_goods
 		mutually_exclusive = { focus = HUN_economic_intervention }
 		x = 5
@@ -1247,6 +1290,8 @@ focus_tree = {
 		y = 0
 
 		cost = 10
+
+		allow_branch = { has_country_flag = HUN_base_game_tree_enabled }
 
 		ai_will_do = {
 			factor = 100

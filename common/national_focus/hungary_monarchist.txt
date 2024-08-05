@@ -1,0 +1,156 @@
+shared_focus = {
+	id = HUN_reshape_the_kingdom
+	icon = GFX_focus_hun_elect_a_king
+	x = 14
+	y = 3
+
+	cost = 10
+	prerequisite = { focus = HUN_crackdown_on_fascists  }
+	prerequisite = { focus = HUN_control_the_media  }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_status_of_the_regency
+	icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+	cost = 1
+	prerequisite = { focus = HUN_reshape_the_kingdom  }
+
+	relative_position_id = HUN_reshape_the_kingdom
+	x = -1
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_the_kenderes_trial
+	icon = GFX_focus_hun_assassinate_horthy
+	cost = 1
+	prerequisite = { focus = HUN_status_of_the_regency  }
+
+	relative_position_id = HUN_status_of_the_regency
+	x = -2
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_a_gediminid_candidate
+	icon = GFX_goal_tfv_strengthen_commonwealth_ties
+	cost = 1
+	prerequisite = { focus = HUN_status_of_the_regency  }
+
+	relative_position_id = HUN_status_of_the_regency
+	x = 0
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_disassociate_the_parliament
+	icon = GFX_focus_NOR_restore_public_trust_in_the_storting
+	cost = 1
+	prerequisite = { focus = HUN_reshape_the_kingdom  }
+
+	relative_position_id = HUN_reshape_the_kingdom
+	x = 1
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_disarm_the_unity_militias
+	icon = GFX_focus_generic_conspiracy
+	cost = 1
+	prerequisite = { focus = HUN_disassociate_the_parliament  }
+
+	relative_position_id = HUN_disassociate_the_parliament
+	x = 0
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_restorationism_movement
+	icon = GFX_focus_spr_torchbearers_of_tomorrow
+	cost = 1
+	prerequisite = { focus = HUN_disassociate_the_parliament  }
+
+	relative_position_id = HUN_disassociate_the_parliament
+	x = 2
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_revival_of_the_jagiellonians
+	icon = GFX_focus_BRA_restore_brazilian_honor
+	cost = 1
+	prerequisite = { focus = HUN_a_gediminid_candidate  }
+	prerequisite = { focus = HUN_the_kenderes_trial  }
+	prerequisite = { focus = HUN_disarm_the_unity_militias  }
+	prerequisite = { focus = HUN_restorationism_movement  }
+
+	relative_position_id = HUN_a_gediminid_candidate
+	x = 1
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_found_the_imperial_council
+	icon = GFX_focus_BUL_form_a_regency_council
+	cost = 1
+	prerequisite = { focus = HUN_revival_of_the_jagiellonians  }
+
+	relative_position_id = HUN_revival_of_the_jagiellonians
+	x = 0
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}

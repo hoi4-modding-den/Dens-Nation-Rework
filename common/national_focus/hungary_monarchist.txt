@@ -139,12 +139,509 @@ shared_focus = {
 }
 shared_focus = {
 	id = HUN_found_the_imperial_council
-	icon = GFX_focus_BUL_form_a_regency_council
+	icon = GFX_focus_generic_improve_the_administration
 	cost = 1
 	prerequisite = { focus = HUN_revival_of_the_jagiellonians  }
 
 	relative_position_id = HUN_revival_of_the_jagiellonians
 	x = 0
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_constitutional_framework
+	icon = GFX_focus_HUN_constitutional_framework
+	cost = 1
+	prerequisite = { focus = HUN_found_the_imperial_council  }
+	mutually_exclusive = {
+		focus = HUN_hungarian_absolutism
+	}
+	relative_position_id = HUN_found_the_imperial_council
+	x = -2
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_political_plurality
+	icon = GFX_focus_generic_industrialists
+	cost = 1
+	prerequisite = { focus = HUN_constitutional_framework  }
+	relative_position_id = HUN_constitutional_framework
+	x = -1
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_curtail_extreme_parties
+	icon = GFX_focus_BRA_ban_communist_party
+	cost = 1
+	prerequisite = { focus = HUN_constitutional_framework  }
+	relative_position_id = HUN_constitutional_framework
+	x = 1
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_ensure_free_and_fair_elections
+	icon = GFX_focus_SWE_refuge_from_war
+	cost = 1
+	prerequisite = { focus = HUN_curtail_extreme_parties  }
+	prerequisite = { focus = HUN_political_plurality }
+	mutually_exclusive = {
+		focus = HUN_traditionalist_dominated_council
+	}
+	relative_position_id = HUN_political_plurality
+	x = 0
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_traditionalist_dominated_council
+	icon = GFX_focus_SWI_dissolve_the_federal_council
+	cost = 1
+	prerequisite = { focus = HUN_curtail_extreme_parties  }
+	prerequisite = { focus = HUN_political_plurality }
+	mutually_exclusive = {
+		focus = HUN_ensure_free_and_fair_elections
+	}
+	relative_position_id = HUN_curtail_extreme_parties
+	x = 0
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_hungarian_absolutism
+	icon = GFX_focus_generic_monarchy_1
+	cost = 1
+	prerequisite = { focus = HUN_found_the_imperial_council  }
+	mutually_exclusive = {
+		focus = HUN_constitutional_framework
+	}
+	relative_position_id = HUN_found_the_imperial_council
+	x = 2
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_royalist_catholic_leagues
+	icon = GFX_focus_mex_restore_the_army_of_christ
+	cost = 1
+	prerequisite = { focus = HUN_hungarian_absolutism }
+	relative_position_id = HUN_hungarian_absolutism
+	x = -1
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_merit_based_appointments
+	icon = GFX_focus_BRA_reach_out_to_military_dem
+	cost = 1
+	prerequisite = { focus = HUN_hungarian_absolutism }
+	relative_position_id = HUN_hungarian_absolutism
+	x = 1
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_the_sapphire_constitution
+	icon = GFX_focus_rom_royal_dictatorship
+	cost = 1
+	prerequisite = { focus = HUN_royalist_catholic_leagues }
+	prerequisite = { focus = HUN_merit_based_appointments }
+	relative_position_id = HUN_merit_based_appointments
+	x = -1
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_rally_the_realm
+	icon = GFX_focus_HUN_rally_the_realm
+	cost = 1
+	prerequisite = { 
+		focus = HUN_ensure_free_and_fair_elections
+		focus = HUN_traditionalist_dominated_council
+	}
+	prerequisite = { focus = HUN_the_sapphire_constitution }
+	relative_position_id = HUN_ensure_free_and_fair_elections
+	x = 3
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_ally_with_the_clergy
+	icon = GFX_focus_por_concordat
+	cost = 1
+	prerequisite = { focus = HUN_revival_of_the_jagiellonians  }
+	relative_position_id = HUN_revival_of_the_jagiellonians
+	x = -7
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_decree_on_state_religion
+	icon = GFX_focus_focus_fra_national_resistance_council
+	cost = 1
+	prerequisite = { focus = HUN_ally_with_the_clergy  }
+	relative_position_id = HUN_ally_with_the_clergy
+	x = 0
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_promote_national_mythos
+	icon = GFX_focus_focus_fra_national_resistance_council
+	cost = 1
+	prerequisite = { focus = HUN_decree_on_state_religion  }
+	relative_position_id = HUN_decree_on_state_religion
+	x = -2
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_cultural_indoctrination
+	icon = GFX_focus_HUN_cultural_indoctrination
+	cost = 1
+	prerequisite = { focus = HUN_decree_on_state_religion  }
+	mutually_exclusive = {
+		focus = HUN_kingdom_united
+	}
+	relative_position_id = HUN_decree_on_state_religion
+	x = 0
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_kingdom_united
+	icon = GFX_focus_ITA_the_social_republic_prevails
+	cost = 1
+	prerequisite = { focus = HUN_decree_on_state_religion  }
+	mutually_exclusive = {
+		focus = HUN_cultural_indoctrination
+	}
+	relative_position_id = HUN_decree_on_state_religion
+	x = 2
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_bill_of_civic_liberties
+	icon = GFX_focus_ICE_embrace_the_workers_revolution
+	cost = 1
+	prerequisite = { focus = HUN_kingdom_united  }
+	relative_position_id = HUN_kingdom_united
+	x = -1
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_royal_academies
+	icon = GFX_focus_FIN_expand_air_force_academy
+	cost = 1
+	prerequisite = { 
+		focus = HUN_kingdom_united  
+		focus = HUN_cultural_indoctrination
+	}
+	prerequisite = {
+		focus = HUN_promote_national_mythos
+	}
+	relative_position_id = HUN_kingdom_united
+	x = -3
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_vocational_training
+	icon = GFX_focus_generic_monarchy_2
+	cost = 1
+	prerequisite = { 
+		focus = HUN_royal_academies  
+		focus = HUN_bill_of_civic_liberties
+	}
+	relative_position_id = HUN_royal_academies
+	x = 1
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_feudal_duties
+	icon = GFX_focus_generic_vatican_state
+	cost = 1
+	prerequisite = { focus = HUN_revival_of_the_jagiellonians  }
+	relative_position_id = HUN_revival_of_the_jagiellonians
+	x = 7
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_the_revamped_approach
+	icon = GFX_focus_SWE_defense_act
+	cost = 1
+	prerequisite = { focus = HUN_feudal_duties  }
+	mutually_exclusive = {
+		focus = HUN_reinforce_the_feudal_hierarchy
+	}
+	relative_position_id = HUN_feudal_duties
+	x = -1
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_reinforce_the_feudal_hierarchy
+	icon = GFX_focus_SWE_counter_revolution
+	cost = 1
+	prerequisite = { focus = HUN_feudal_duties  }
+	mutually_exclusive = {
+		focus = HUN_the_revamped_approach
+	}
+	relative_position_id = HUN_feudal_duties
+	x = 1
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_industrial_nobility
+	icon = GFX_focus_HUN_industrial_nobility
+	cost = 1
+	prerequisite = { focus = HUN_the_revamped_approach  }
+	relative_position_id = HUN_the_revamped_approach
+	x = 0
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_land_tenures
+	icon = GFX_focus_generic_agricultural_subsidies
+	cost = 1
+	prerequisite = { focus = HUN_reinforce_the_feudal_hierarchy  }
+	relative_position_id = HUN_reinforce_the_feudal_hierarchy
+	x = 0
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_feudal_welfare_state
+	icon = GFX_focus_SWE_form_rfsu
+	cost = 1
+	prerequisite = { focus = HUN_industrial_nobility  }
+	relative_position_id = HUN_industrial_nobility
+	x = -1
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_the_hungarian_national_royal_bank
+	icon = GFX_focus_CHL_strengthen_the_central_bank
+	cost = 1
+	prerequisite = { 
+		focus = HUN_industrial_nobility  
+		focus = HUN_land_tenures
+	}
+	relative_position_id = HUN_industrial_nobility
+	x = 1
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_bolster_crown_revenues
+	icon = GFX_focus_ETH_the-italo_ethiopian_empire
+	cost = 1
+	prerequisite = { focus = HUN_land_tenures  }
+	relative_position_id = HUN_land_tenures
+	x = 1
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_enact_modern_policies
+	icon = GFX_focus_FIN_finnish_federation_of_trade_unions
+	cost = 1
+	prerequisite = { focus = HUN_feudal_welfare_state  }
+	prerequisite = {
+		focus = HUN_the_hungarian_national_royal_bank
+	}
+	relative_position_id = HUN_feudal_welfare_state
+	x = 1
+	y = 1
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {	
+	}
+}
+shared_focus = {
+	id = HUN_nobles_over_all
+	icon = GFX_focus_CHL_ruler_of_the_inca
+	cost = 1
+	prerequisite = { focus = HUN_bolster_crown_revenues  }
+	prerequisite = {
+		focus = HUN_the_hungarian_national_royal_bank
+	}
+	relative_position_id = HUN_bolster_crown_revenues
+	x = -1
 	y = 1
 	
 	ai_will_do = {

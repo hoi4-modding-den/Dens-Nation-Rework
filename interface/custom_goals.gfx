@@ -1,0 +1,22 @@
+spriteTypes = {	
+
+	SpriteType = {
+	name = "GFX_focus_HUN_constitutional_framework"
+	texturefile = "gfx/interface/goals/focus_HUN_constitutional_framework.dds"			
+	}
+	
+	SpriteType = {
+	name = "GFX_focus_HUN_cultural_indoctrination"
+	texturefile = "gfx/interface/goals/focus_HUN_cultural_indoctrination.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_focus_HUN_rally_the_realm"
+	texturefile = "gfx/interface/goals/focus_HUN_rally_the_realm.dds"			
+	}
+
+	SpriteType = {
+	name = "GFX_focus_HUN_industrial_nobility"
+	texturefile = "gfx/interface/goals/focus_HUN_industrial_nobility.dds"			
+	}		
+}

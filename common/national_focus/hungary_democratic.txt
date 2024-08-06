@@ -1,7 +1,7 @@
 shared_focus = {
 	id = HUN_declare_republic
 	icon = GFX_goal_support_democracy
-	x = 6
+	x = -5
 	y = 3
 	#relative_position_id = 2
 
@@ -21,7 +21,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_break_away_from_germany
 	icon = GFX_focus_focus_fra_fascist_threat
-	x = 2
+	x = -9
 	y = 4
 	#relative_position_id = 2
 
@@ -40,7 +40,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_create_constitution
 	icon = GFX_focus_POL_complete_april_constitution
-	x = 6
+	x = -5
 	y = 4
 	#relative_position_id = 2
 
@@ -59,7 +59,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_ban_national_unity
 	icon = GFX_focus_POL_ban_nazi_party
-	x = 10
+	x = -1
 	y = 4
 	#relative_position_id = 2
 
@@ -78,7 +78,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_support_workers
 	icon = GFX_focus_ITA_workers_unions
-	x = 1
+	x = -10
 	y = 5
 	#relative_position_id = 2
 
@@ -98,7 +98,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_support_peasants
 	icon = GFX_focus_generic_workers_and_farmers_rise
-	x = 3
+	x = -8
 	y = 5
 	#relative_position_id = 2
 
@@ -118,7 +118,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_universal_suffrage
 	icon = GFX_focus_generic_treaty
-	x = 5
+	x = -6
 	y = 5
 	#relative_position_id = 2
 
@@ -137,7 +137,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_expand_welfare
 	icon = GFX_focus_ETH_adopt_the_lira
-	x = 7
+	x = -4
 	y = 5
 	#relative_position_id = 2
 
@@ -156,7 +156,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_reduce_anti_communism
 	icon = GFX_focus_chi_cooperation_with_the_communists
-	x = 9
+	x = -2
 	y = 5
 	#relative_position_id = 2
 
@@ -176,7 +176,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_increase_anti_communism
 	icon = GFX_goal_anti_comintern_pact
-	x = 11
+	x = 0
 	y = 5
 	#relative_position_id = 2
 
@@ -196,7 +196,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_election_time
 	icon = GFX_goal_support_democracy
-	x = 6
+	x = -5
 	y = 6
 	#relative_position_id = 2
 
@@ -219,7 +219,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_socdem_win
 	icon = GFX_focus_prc_agrarian_socialism
-	x = 1
+	x = -10
 	y = 7
 	#relative_position_id = 2
 
@@ -238,7 +238,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_agarian_win
 	icon = GFX_focus_generic_farmland
-	x = 11
+	x = 0
 	y = 7
 	#relative_position_id = 2
 
@@ -257,7 +257,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_worker_rights
 	icon = GFX_focus_generic_workers
-	x = 0
+	x = -11
 	y = 8
 	#relative_position_id = 2
 
@@ -275,7 +275,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_secular_democracy
 	icon = GFX_focus_ARG_state_atheism
-	x = 2
+	x = -9
 	y = 8
 	#relative_position_id = 2
 
@@ -294,7 +294,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_education_reform
 	icon = GFX_focus_research2
-	x = 4
+	x = -7
 	y = 8
 	#relative_position_id = 2
 
@@ -312,7 +312,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_land_reform
 	icon = GFX_goal_reichsautobahn
-	x = 6
+	x = -5
 	y = 8
 	#relative_position_id = 2
 
@@ -330,7 +330,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_rural_investment
 	icon = GFX_focus_ITA_grande_rivolta_rurale
-	x = 8
+	x = -3
 	y = 8
 	#relative_position_id = 2
 
@@ -349,7 +349,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_agarian_democracy
 	icon = GFX_focus_usa_voter_registration_act
-	x = 10
+	x = -1
 	y = 8
 	#relative_position_id = 2
 
@@ -367,7 +367,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_wheat_price_balance
 	icon = GFX_focus_generic_agricultural_subsidies
-	x = 12
+	x = 1
 	y = 8
 	#relative_position_id = 2
 
@@ -386,7 +386,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_modern_economy
 	icon = GFX_focus_generic_modernize_industry
-	x = -2
+	x = -13
 	y = 9
 	#relative_position_id = 2
 
@@ -405,7 +405,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_unionize_peasants
 	icon = GFX_focus_SOV_breadbasket_of_the_union
-	x = 0
+	x = -11
 	y = 9
 	#relative_position_id = 2
 
@@ -424,7 +424,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_socialist_welfare
 	icon = GFX_focus_FIN_socialist_welfare
-	x = 2
+	x = -9
 	y = 9
 	#relative_position_id = 2
 
@@ -443,7 +443,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_expand_healthcare
 	icon = GFX_focus_generic_field_hostpital
-	x = 4
+	x = -7
 	y = 9
 	#relative_position_id = 2
 
@@ -463,7 +463,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_extensive_land_reform
 	icon = GFX_focus_generic_land_reclamation
-	x = 6
+	x = -5
 	y = 9
 	#relative_position_id = 2
 
@@ -482,7 +482,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_modern_admin
 	icon = GFX_focus_generic_improve_the_administration
-	x = 8
+	x = -3
 	y = 9
 	#relative_position_id = 2
 
@@ -501,7 +501,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_religious_admin
 	icon = GFX_focus_generic_catholic_dominion
-	x = 10
+	x = -1
 	y = 9
 	#relative_position_id = 2
 
@@ -520,7 +520,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_agricultural_welfare
 	icon = GFX_focus_BRA_support_sugar_barons
-	x = 12
+	x = 1
 	y = 9
 	#relative_position_id = 2
 
@@ -539,7 +539,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_expand_land_ownership
 	icon = GFX_focus_ITA_peasants_rise
-	x = 14
+	x = 3
 	y = 9
 	#relative_position_id = 2
 
@@ -559,7 +559,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_hungarian_socialism
 	icon = GFX_focus_SWE_refuge_for_revolutionaries
-	x = 1
+	x = -10
 	y = 10
 	#relative_position_id = 2
 
@@ -579,7 +579,7 @@ shared_focus = {
 shared_focus = {
 	id = HUN_hungarian_democracy
 	icon = GFX_focus_SWE_refuge_from_war
-	x = 11
+	x = 0
 	y = 10
 	#relative_position_id = 2
 

@@ -253,6 +253,7 @@ shared_focus = {
 
 	completion_reward = {
 		country_event = HUN_focus_event.1
+		custom_effect_tooltip = HUN_foreign_policy_tree_notification
 	}
 }
 
@@ -923,6 +924,10 @@ shared_focus = {
 	y = 11
 
 	cost = 5
+
+	available = {
+		has_completed_focus = HUN_election_time
+	}
 
 	ai_will_do = {
 		factor = 1

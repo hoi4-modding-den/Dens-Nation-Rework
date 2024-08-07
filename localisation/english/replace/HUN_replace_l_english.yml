@@ -151,6 +151,7 @@
  HUN_increase_anti_communism_desc:0 ""
  HUN_election_time:0 "The [GetYear] Election"
  HUN_election_time_desc:0 ""
+ HUN_foreign_policy_tree_notification:0 "§GYou can now access the §YForeign Policy §Gtree below."
  HUN_education_reform:0 "Education Reform"
  HUN_education_reform_desc:0 ""
  HUN_land_reform:0 "Extensive Land Reform"

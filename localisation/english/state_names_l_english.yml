@@ -68,7 +68,7 @@
  STATE_66:0 "Niederschlesien"
  STATE_67:0 "Oberschlesien"
  STATE_68:0 "Ostmark"
- STATE_69:0 "Sudetenland"
+ STATE_69:0 "Northern Sudetenland"
  STATE_70:0 "Bratislava"
  STATE_71:0 "Presov"
  STATE_72:0 "Zaolzie"
@@ -1001,3 +1001,4 @@
  STATE_983:0 "Miskolc"
  STATE_984:0 "Liptov"
  STATE_985:0 "Biele Karpaty"
+ STATE_986:0 "Southern Sudetenland"

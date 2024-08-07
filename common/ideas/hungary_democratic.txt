@@ -1,0 +1,205 @@
+ideas = {
+	country = {
+		HUN_economy_struggling = {
+			picture = generic_economic_crisis
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = -0.05
+			}						
+		}
+		HUN_constitution_bonus = {
+			picture = generic_constitutional_guarantees
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.1
+				democratic_drift = 0.01
+			}						
+		}
+		HUN_constitution_bonus_suffrage = {
+			picture = generic_constitutional_guarantees
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.1
+				democratic_drift = 0.03
+				conscription_factor = 0.1
+			}						
+		}
+		HUN_constitution_bonus_secular = {
+			picture = ARG_state_atheism
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.2
+				democratic_drift = 0.05
+				conscription_factor = 0.1
+			}						
+		}
+		HUN_constitution_bonus_agrarian = {
+			picture = generic_agrarian_society
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.1
+				democratic_drift = 0.03
+				conscription_factor = 0.1
+				local_building_slots_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}						
+		}
+		HUN_constitution_bonus_agrarian_2 = {
+			picture = generic_agrarian_society
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.1
+				democratic_drift = 0.03
+				conscription_factor = 0.15
+				local_building_slots_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}						
+		}
+		HUN_constitution_bonus_catholic = {
+			picture = MEX_church_power_5
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.225
+				political_power_gain = 0.20
+				democratic_drift = 0.03
+				conscription_factor = 0.1
+			}						
+		}
+		HUN_constitution_bonus_catholic_2 = {
+			picture = MEX_church_power_5
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.225
+				political_power_gain = 0.20
+				democratic_drift = 0.03
+				conscription_factor = 0.15
+			}						
+		}
+		HUN_welfare_base = {
+			picture = ARG_social_welfare_fund_ns
+			removal_cost = -1
+			modifier = {
+				monthly_population = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+			}	
+		}
+		HUN_welfare_socialist = {
+			picture = FIN_socialist_welfare
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				monthly_population = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}	
+		}
+		HUN_welfare_healthcare = {
+			picture = generic_goods_red_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				monthly_population = 0.40
+				production_factory_efficiency_gain_factor = 0.1
+				stability_factor = 0.05
+			}	
+		}
+		HUN_welfare_agricultural = {
+			picture = ARG_social_welfare_fund_ns
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				monthly_population = 0.50
+				production_factory_efficiency_gain_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}	
+		}
+		HUN_welfare_peasant = {
+			picture = ARG_social_welfare_fund_ns
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				monthly_population = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+			}	
+		}
+		HUN_worker_reforms = {
+			picture = FIN_finnish_federation_of_trade_unions
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}	
+		}
+		HUN_worker_reforms_modernized = {
+			picture = FIN_finnish_federation_of_trade_unions
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.125
+			}	
+		}
+		HUN_worker_reforms_peasants = {
+			picture = FIN_finnish_federation_of_trade_unions
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				global_building_slots_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.15
+			}	
+		}
+		HUN_education_reforms = {
+			picture = generic_research_bonus
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.06
+			}	
+		}
+		HUN_education_reforms_socdem = {
+			picture = generic_research_bonus
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.1
+			}	
+		}
+		HUN_education_reforms_socdem_lazy = { #for if you skipped doing the education reform focus
+			picture = generic_research_bonus
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.04
+			}	
+		}
+		HUN_land_reform_1 = {
+			picture = generic_agrarian_reform
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.1
+			}	
+		}
+		HUN_land_reform_2 = {
+			picture = LIT_invested_in_farms
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.2
+				local_resources_factor = 0.15
+			}	
+		}
+		HUN_wheat_reform = {
+			picture = generic_agrarian_reform
+			removal_cost = -1
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.15
+				stability_factor = 0.05
+			}	
+		}
+
+	}
+}

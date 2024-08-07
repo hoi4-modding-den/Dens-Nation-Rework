@@ -33,7 +33,12 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_political_power = 100
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
+		add_ideas = HUN_economy_struggling
 	}
 }
 
@@ -52,7 +57,11 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		add_ideas = HUN_constitution_bonus
 	}
 }
 
@@ -71,7 +80,15 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_stability = 0.05
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = -0.1
+		}
 	}
 }
 
@@ -91,7 +108,15 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_stability = 0.05
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
 	}
 }
 
@@ -111,7 +136,11 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_political_power = 50
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.05
+		}
 	}
 }
 
@@ -130,7 +159,10 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		swap_ideas = {
+			remove_idea = HUN_constitution_bonus
+			add_idea = HUN_constitution_bonus_suffrage
+		}
 	}
 }
 
@@ -149,7 +181,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_ideas = HUN_welfare_base
 	}
 }
 
@@ -169,7 +201,12 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_political_power = 100
+		add_stability = 0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
 	}
 }
 
@@ -189,7 +226,11 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = communism
+			popularity = -0.1
+		}
 	}
 }
 
@@ -211,7 +252,7 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		country_event = HUN_focus_event.1
 	}
 }
 
@@ -222,6 +263,18 @@ shared_focus = {
 	x = -10
 	y = 7
 	#relative_position_id = 2
+
+	#available = {
+	#	HUN_arpad_szakasits = {
+	#		is_country_leader = yes
+	#	}
+	#}
+
+	bypass = {
+		HUN_arpad_szakasits = {
+			is_country_leader = yes
+		}
+	}
 
 	cost = 5
 	prerequisite = { focus =  HUN_election_time }
@@ -241,6 +294,18 @@ shared_focus = {
 	x = 0
 	y = 7
 	#relative_position_id = 2
+
+	#available = {
+	#	HUN_tibor_eckhardt = {
+	#		is_country_leader = yes
+	#	}
+	#}
+
+	bypass = {
+		HUN_tibor_eckhardt = {
+			is_country_leader = yes
+		}
+	}
 
 	cost = 5
 	prerequisite = { focus =  HUN_election_time }
@@ -269,7 +334,14 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		swap_ideas = {
+			remove_idea = HUN_economy_struggling
+			add_idea = HUN_worker_reforms
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05 #because why make a revolution if reform is possible
+		}
 	}
 }
 shared_focus = {
@@ -287,7 +359,11 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		swap_ideas = {
+			remove_idea = HUN_constitution_bonus_suffrage
+			add_idea = HUN_constitution_bonus_secular
+		}
+
 	}
 }
 
@@ -306,6 +382,22 @@ shared_focus = {
 	}
 
 	completion_reward = {
+		if = {
+			limit = { has_idea = HUN_education_reforms_socdem_lazy  }
+				swap_ideas = {
+					remove_idea = HUN_education_reforms_socdem_lazy
+					add_idea = HUN_education_reforms_socdem
+				} 
+			else = {
+				add_ideas = HUN_education_reforms
+			}
+		}
+
+		if = {
+			limit = { amount_research_slots < 5 }
+			add_research_slot = 1
+			custom_effect_tooltip = CZE_war_college_effect_tt
+		}
 		
 	}
 }
@@ -324,7 +416,17 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_political_power = -100
+		43 = {
+			increase_state_category = yes
+		}
+		154 = {
+			increase_state_category = yes
+		}
+		155 = {
+			increase_state_category = yes
+		}
+		add_ideas = HUN_land_reform_1
 	}
 }
 shared_focus = {
@@ -342,7 +444,31 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_political_power = -50
+		981 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		982 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		983 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
 	}
 }
 
@@ -361,7 +487,15 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_stability = 0.1
+		add_popularity = {
+			ideology = communism
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		}
 	}
 }
 shared_focus = {
@@ -379,7 +513,10 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		swap_ideas = {
+			remove_idea = HUN_economy_struggling
+			add_idea = HUN_wheat_reform
+		} 
 	}
 }
 
@@ -399,7 +536,38 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_stability = -0.05
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		remove_ideas = HUN_rustic_economy
 	}
 }
 shared_focus = {
@@ -418,7 +586,14 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		swap_ideas = {
+			remove_idea = HUN_worker_reforms
+			add_idea = HUN_worker_reforms_peasants
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
 	}
 }
 shared_focus = {
@@ -437,7 +612,14 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		swap_ideas = {
+			remove_idea = HUN_welfare_base
+			add_idea = HUN_welfare_socialist
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
 	}
 }
 shared_focus = {
@@ -456,7 +638,10 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		swap_ideas = {
+			remove_idea = HUN_welfare_base
+			add_idea = HUN_welfare_healthcare
+		}
 	}
 }
 
@@ -475,7 +660,10 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		swap_ideas = {
+			remove_idea = HUN_land_reform_1
+			add_idea = HUN_land_reform_2
+		}
 	}
 }
 
@@ -495,7 +683,10 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		swap_ideas = {
+			remove_idea = HUN_constitution_bonus_suffrage
+			add_idea = HUN_constitution_bonus_agrarian
+		}
 	}
 }
 shared_focus = {
@@ -514,7 +705,10 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		swap_ideas = {
+			remove_idea = HUN_constitution_bonus_suffrage
+			add_idea = HUN_constitution_bonus_catholic
+		}
 	}
 }
 shared_focus = {
@@ -533,7 +727,10 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		swap_ideas = {
+			remove_idea = HUN_welfare_base
+			add_idea = HUN_welfare_agricultural
+		}
 	}
 }
 shared_focus = {
@@ -552,7 +749,95 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		swap_ideas = {
+			remove_idea = HUN_welfare_base
+			add_idea = HUN_welfare_peasant
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+		}
 	}
 }
 
@@ -573,7 +858,22 @@ shared_focus = {
 	}
 
 	completion_reward = {
-		
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+		if = {
+			limit = { NOT = { has_idea = HUN_education_reforms } }
+			add_ideas = HUN_education_reforms_socdem_lazy
+			else = {
+				swap_ideas = {
+					remove_idea = HUN_education_reforms
+					add_idea = HUN_education_reforms_socdem
+				}
+			}
+		}
 	}
 }
 shared_focus = {
@@ -587,6 +887,446 @@ shared_focus = {
 	prerequisite = { focus = HUN_extensive_land_reform }
 	prerequisite = { focus = HUN_modern_admin focus = HUN_religious_admin }
 	prerequisite = { focus = HUN_agricultural_welfare focus = HUN_expand_land_ownership }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		add_political_power = 200
+		add_stability = 0.05
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+		if = {
+			limit = { has_idea = HUN_constitution_bonus_agrarian }
+				swap_ideas = {
+					remove_idea = HUN_constitution_bonus_agrarian
+					add_idea = HUN_constitution_bonus_agrarian_2
+				}
+			else = {
+				swap_ideas = {
+					remove_idea = HUN_constitution_bonus_catholic
+					add_idea = HUN_constitution_bonus_catholic_2
+				}
+			}
+		}
+	}
+}
+
+###Foreign Policy Tree###
+shared_focus = {
+	id = HUN_world_stage
+	icon = GFX_goal_generic_major_alliance
+	x = -5
+	y = 11
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = HUN_look_west
+	icon = GFX_focus_ARG_join_the_allies
+	x = -6
+	y = 12
+
+	cost = 5
+	prerequisite = { focus = HUN_world_stage }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = HUN_look_east
+	icon = GFX_focus_SOV_reinforce_southern_naval_bases
+	x = -4
+	y = 12
+
+	cost = 5
+	prerequisite = { focus = HUN_world_stage }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = HUN_ask_for_land
+	icon = GFX_goal_demand_sudetenland
+	x = -10
+	y = 13
+
+	cost = 5
+	prerequisite = { focus = HUN_look_west }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = HUN_enemies_on_all_sides
+	icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+	x = -8
+	y = 13
+
+	cost = 5
+	prerequisite = { focus = HUN_look_west }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = HUN_fight_fascism
+	icon = GFX_focus_focus_fra_fascist_threat
+	x = -6
+	y = 13
+
+	cost = 5
+	prerequisite = { focus = HUN_look_west }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = HUN_balkan_democracy
+	icon = GFX_focus_generic_balkan_diplomacy
+	x = -4
+	y = 13
+
+	cost = 5
+	prerequisite = { focus = HUN_look_east}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = HUN_invite_poland
+	icon = GFX_focus_generic_polish_deal
+	x = -2
+	y = 13
+
+	cost = 5
+	prerequisite = { focus = HUN_look_east}
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = HUN_exile
+	icon = GFX_focus_eng_move_to_secure_the_dominions
+	x = -11
+	y = 14
+
+	cost = 5
+	prerequisite = { focus = HUN_enemies_on_all_sides }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = HUN_fortify_hungary
+	icon = GFX_goal_generic_fortify_city
+	x = -9
+	y = 14
+
+	cost = 5
+	prerequisite = { focus = HUN_enemies_on_all_sides }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = HUN_occupy_occupied_territory
+	icon = GFX_goal_generic_occupy_states_ongoing_war
+	x = -7
+	y = 14
+
+	cost = 5
+	prerequisite = { focus = HUN_enemies_on_all_sides }
+	prerequisite = { focus = HUN_fight_fascism }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = HUN_stop_anschluss
+	icon = GFX_focus_SWI_fortify_border_with_germany
+	x = -5
+	y = 14
+
+	cost = 5
+	prerequisite = { focus = HUN_fight_fascism focus = HUN_balkan_democracy }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = HUN_fuck_you_bulgaria
+	icon = GFX_focus_generic_attack_bulgaria
+	x = -3
+	y = 14
+
+	cost = 5
+	prerequisite = { focus = HUN_balkan_democracy }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = HUN_save_albania
+	icon = GFX_focus_generic_befriend_albania
+	x = -1
+	y = 14
+
+	cost = 5
+	prerequisite = { focus = HUN_balkan_democracy }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = HUN_protect_greece
+	icon = GFX_focus_generic_befriend_greece
+	x = 1
+	y = 14
+
+	cost = 5
+	prerequisite = { focus = HUN_balkan_democracy }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = HUN_rent_shipyards
+	icon = GFX_focus_generic_refit_civilian_ships
+	x = -12
+	y = 15
+
+	cost = 5
+	prerequisite = { focus = HUN_exile }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = HUN_exiled_industry
+	icon = GFX_focus_usa_guarantee_the_american_dream
+	x = -10
+	y = 15
+
+	cost = 5
+	prerequisite = { focus = HUN_exile }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = HUN_churchill_plan
+	icon = GFX_focus_eng_motion_of_no_confidence
+	x = -8
+	y = 15
+
+	cost = 5
+	prerequisite = { focus = HUN_occupy_occupied_territory }
+
+	mutually_exclusive = { focus = HUN_churchill_plan } 
+	mutually_exclusive = { focus = HUN_greater_hungary_democratic }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = HUN_greater_hungary_democratic
+	icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
+	x = -6
+	y = 15
+
+	cost = 5
+	prerequisite = { focus = HUN_occupy_occupied_territory }
+
+	mutually_exclusive = { focus = HUN_churchill_plan } 
+	mutually_exclusive = { focus = HUN_greater_hungary_democratic }
+	
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = HUN_federate_intermarium
+	icon = GFX_focus_BUL_free_balkan_states
+	x = -1
+	y = 15
+
+	cost = 5
+	prerequisite = { focus = HUN_fuck_you_bulgaria focus = HUN_protect_greece focus = HUN_save_albania }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = HUN_american_hungarians
+	icon = GFX_focus_generic_american_investments
+	x = -11
+	y = 16
+
+	cost = 5
+	prerequisite = { focus = HUN_exile }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+
+shared_focus = {
+	id = HUN_kill_soviets
+	icon = GFX_focus_attack_soviet
+	x = -6
+	y = 16
+
+	cost = 5
+	prerequisite = { focus = HUN_churchill_plan focus = HUN_greater_hungary_democratic focus = HUN_federate_intermarium }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = HUN_turan_threat
+	icon = GFX_focus_generic_attack_turkey
+	x = -4
+	y = 16
+
+	cost = 5
+	prerequisite = { focus = HUN_churchill_plan focus = HUN_greater_hungary_democratic focus = HUN_federate_intermarium }
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	completion_reward = {
+		
+	}
+}
+shared_focus = {
+	id = HUN_eliminate_euro_fascists
+	icon = GFX_focus_generic_anti_fascist_diplomacy
+	x = -2
+	y = 16
+
+	cost = 5
+	prerequisite = { focus = HUN_churchill_plan focus = HUN_greater_hungary_democratic focus = HUN_federate_intermarium }
 
 	ai_will_do = {
 		factor = 1

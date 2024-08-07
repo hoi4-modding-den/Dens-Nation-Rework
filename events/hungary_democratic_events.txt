@@ -1,0 +1,27 @@
+add_namespace = HUN_focus_event
+add_namespace = HUN_news_event
+add_namespace = HUN_diplo_event
+
+country_event = { #election event
+    id = HUN_focus_event.1
+    title = HUN_focus_event.1.t
+    # picture = GFX_report_event_DEN_celebration
+    desc = HUN_focus_event.1.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = HUN_focus_event.1.a
+		promote_character = HUN_tibor_eckhardt
+		ai_chance = {
+			base = 100
+		}
+    }
+	option = {
+        name = HUN_focus_event.1.b
+		promote_character = HUN_arpad_szakasits
+		ai_chance = {
+			base = 100
+		}
+    }
+}

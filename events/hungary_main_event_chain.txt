@@ -1,0 +1,89 @@
+add_namespace = HUN_chain_event
+add_namespace = HUN_focus_event
+add_namespace = HUN_news_event
+add_namespace = HUN_diplo_event
+
+country_event = { #intro event
+    id = HUN_chain_event.1
+    title = HUN_chain_event.1.t
+    picture = GFX_report_event_hungary_parliament
+    desc = HUN_chain_event.1.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = HUN_chain_event.1.a
+		
+		hidden_effect = {
+			country_event = {
+				id = HUN_chain_event.2
+				days = 90
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+    }
+}
+
+country_event = { #Scythe Cross event
+    id = HUN_chain_event.2
+    title = HUN_chain_event.2.t
+    picture = GFX_report_event_gre_political_march
+    desc = HUN_chain_event.2.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = HUN_chain_event.2.a
+		
+		hidden_effect = {
+			country_event = {
+				id = HUN_chain_event.3
+				days = 30
+				random_hours = 14
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+    }
+}
+
+country_event = { #March on Budapest event
+    id = HUN_chain_event.3
+    title = HUN_chain_event.3.t
+    picture = GFX_report_event_ger_civil_war
+    desc = HUN_chain_event.3.d
+
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+        name = HUN_chain_event.3.a
+		
+		hidden_effect = {
+			#country_event = { #uncomment once event is made
+			#	id = HUN_chain_event.4
+			#	days = 1
+			#	random_hours = 24
+			#}
+		}
+		ai_chance = {
+			base = 75
+		}
+    }
+	option = {
+        name = HUN_chain_event.3.b
+		
+		hidden_effect = {
+			#country_event = { #uncomment once event is made
+			#	id = 
+			#	days = 1
+			#	random_hours = 24
+			#}
+		}
+		ai_chance = {
+			base = 25
+		}
+    }
+}

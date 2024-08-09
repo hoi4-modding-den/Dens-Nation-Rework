@@ -29,35 +29,19 @@ focus_tree = {
 	continuous_focus_position = { x = 1525 y = 500 }
 
 	focus = {
-		id = HUN_time_waster
-		icon = GFX_focus_rom_royal_dictatorship
-		x = 6
-		y = 0
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-	
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
 		id = HUN_march_on_budapest
 		icon = GFX_focus_ITA_generic_fascist_workers
 		x = 6
 		y = 1
 
-		cost = 10
-		prerequisite = {
-			focus = HUN_time_waster
-		}
+		cost = 10 #does not matter, will be completed by event
+		#prerequisite = {
+		#	focus = HUN_time_waster
+		#}
 		available = {
 			always = no
 		}
+
 		ai_will_do = {
 			factor = 1
 		}
